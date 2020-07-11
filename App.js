@@ -37,7 +37,3 @@ class App extends Component {
 
 export default App;
 
-// rishabh.kumar@wovvtech.com
-// Adadmin@1234
-//f1645c2ffae1262a5aec6d862dd52e5d
-//https://github.com/react-native-community/react-native-svg
