@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WovvTest.iml" filepath="$PROJECT_DIR$/.idea/modules/WovvTest.iml" group="WovvTest" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="WovvTest/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1771777474/react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/1771777474/react-native-community_masked-view.iml" group="WovvTest/react-native-community_masked-view" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/978291128/react-native-community_toolbar-android.iml" filepath="$PROJECT_DIR$/.idea/modules/978291128/react-native-community_toolbar-android.iml" group="WovvTest/react-native-community_toolbar-android" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1113346731/react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-1113346731/react-native-gesture-handler.iml" group="WovvTest/react-native-gesture-handler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1740976039/react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/1740976039/react-native-reanimated.iml" group="WovvTest/react-native-reanimated" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/172016766/react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/172016766/react-native-safe-area-context.iml" group="WovvTest/react-native-safe-area-context" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1175587350/react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/1175587350/react-native-screens.iml" group="WovvTest/react-native-screens" />
+    </modules>
+  </component>
+</project>
