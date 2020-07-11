@@ -11,7 +11,7 @@ const MyStack = createStackNavigator({
     screen: Listing,
     navigationOptions: {
       title: 'Listing',
-      header:null
+      headerShown: false
     }
   },
   Details: {
@@ -20,9 +20,9 @@ const MyStack = createStackNavigator({
       title: 'Capital Weather'
     }
   }
-},{
-  defaultNavigationOptions:{
-    headerTitleAlign:'center'
+}, {
+  defaultNavigationOptions: {
+    headerTitleAlign: 'center'
   }
 })
 

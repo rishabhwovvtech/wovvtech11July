@@ -8,7 +8,7 @@ export default class Details extends Component {
     super(props)
     this.state = {
       temprature: '',
-      weatherIcon: '',
+      weatherIcon: null,
       windSpeed: '',
       precip: '',
       animating: false
@@ -30,13 +30,16 @@ export default class Details extends Component {
         this.setState({
           animating: false
         })
-        console.log('response', response)
-        this.setState({
-          temprature: response.current.temperature,
-          weatherIcon: response.current.weather_icons[0],
-          windSpeed: response.current.wind_speed,
-          precip: response.current.precip,
-        })
+        if (response.status == 404) {
+          alert(response.message)
+        } else {
+          this.setState({
+            temprature: response.current.temperature,
+            weatherIcon: response.current.weather_icons[0],
+            windSpeed: response.current.wind_speed,
+            precip: response.current.precip,
+          })
+        }
       }).catch((error) => {
         this.setState({
           animating: false
@@ -50,7 +53,7 @@ export default class Details extends Component {
       <Container>
         <Content>
           <CardItem>
-            <Card style={{ padding: 5, flex:1 }}>
+            <Card style={{ padding: 5, flex: 1 }}>
               <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                 <View style={{ marginLeft: 20 }}>
                   <Text style={{ fontSize: 15 }}><Text style={{ fontWeight: 'bold' }}>Temperature: </Text>{this.state.temprature}</Text>
@@ -78,8 +81,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    position:'absolute',
-    width:'100%',
-    height:'100%'
+    position: 'absolute',
+    width: '100%',
+    height: '100%'
   },
 });

@@ -25,10 +25,13 @@ export default class Listing extends Component {
                 this.setState({
                     animating: false
                 })
-                console.log('response', response)
-                this.setState({
-                    searchData: response,
-                })
+                if (response.status == 404) {
+                    alert(response.message)
+                } else {
+                    this.setState({
+                        searchData: response,
+                    })
+                }
             }).catch((error) => {
                 this.setState({
                     animating: false
